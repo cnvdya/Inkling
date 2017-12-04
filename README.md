@@ -9,7 +9,7 @@
     
     Team Members:
     
-    • Anjana Eldo
+    • Anjana Eldo (https://www.linkedin.com/in/anjana-eldo-1b7744146/)
     • Anjana Kamath Miyar
     • Mudrita Chaturvedi  (www.linkedin.com/in/mudrita-chaturvedi-aa844588)
     • Vidya Coimbatore Nand Kumar
