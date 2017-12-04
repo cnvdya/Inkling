@@ -9,4 +9,14 @@ public class MyController {
 
 
 
+   @RequestMapping("/")
+   public String handler (Model model) {
+       model.addAttribute("msg",
+                          "a jar packaging example");
+       return "myView";
+   }
+
+
+
+
 }
