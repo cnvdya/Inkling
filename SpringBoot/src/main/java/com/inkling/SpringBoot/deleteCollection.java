@@ -18,5 +18,41 @@ import com.amazonaws.services.rekognition.model.DeleteCollectionResult;
 @Controller
 public class deleteCollection {
 
-
+	@RequestMapping(method = RequestMethod.POST, value = "/deleteCollection")
+	public ModelAndView CollectionExample() {
+		
+		 String collectionId = "colletionimagescloud";
+		 AWSCredentials credentials;
+	      try {
+	    	  credentials = new BasicAWSCredentials("",
+	   				"");
+	      } catch (Exception e) {
+	         throw new AmazonClientException(
+	            "Cannot load the credentials from the credential profiles file. " +
+	            "Please make sure that your credentials file is at the correct " +
+	            "location (/Users/userid/.aws/credentials), and is in valid format.",
+	            e);
+	      }
+	      
+	      AmazonRekognition amazonRekognition = AmazonRekognitionClientBuilder
+	 	         .standard()
+	 	         .withRegion(Regions.US_EAST_1)
+	 	         .withCredentials(new AWSStaticCredentialsProvider(credentials))
+	 	         .build();
+	System.out.println("Deleting collections");
+    DeleteCollectionResult deleteCollectionResult = callDeleteCollection(
+       collectionId, amazonRekognition);
+    System.out.println(collectionId + ": " + deleteCollectionResult.getStatusCode()
+       .toString());
+	return null;
+	
+	}
+	
+	private static DeleteCollectionResult callDeleteCollection(String collectionId,
+		      AmazonRekognition amazonRekognition) {
+		      DeleteCollectionRequest request = new DeleteCollectionRequest()
+		         .withCollectionId(collectionId);
+		      return amazonRekognition.deleteCollection(request);
+		   }
 }
+
