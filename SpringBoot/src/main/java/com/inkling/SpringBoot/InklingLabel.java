@@ -10,6 +10,7 @@ public class InklingLabel {
         this.inklingpictures = inklingpictures;
     }
 
+    
     public String inklingpictures;
 
 
