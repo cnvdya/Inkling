@@ -183,37 +183,11 @@ public ModelAndView DetectLabelsImage(HttpServletRequest request) throws SQLExce
 				e.printStackTrace();
 			}
 		} else {
-//	for(S3ObjectSummary s3SummaryOfFiles : s3Objects.getObjectSummaries()) {
 
-		//imageAttributes img = new imageAttributes();
-//		 DetectLabelsRequest requestLabel = new DetectLabelsRequest()
-//		  		  .withImage(new Image()
-//		  		  .withS3Object(new S3Object()
-//		  		  .withName(s3SummaryOfFiles.getKey()).withBucket(bucket)))
-//		  		  .withMaxLabels(10)
-//		  		  .withMinConfidence(75F);
 
 		try {
 
-//		    	 DetectLabelsResult result = rekognitionClient.detectLabels(requestLabel);
-//
-//		       List <Label> labels = result.getLabels();
 
-			//System.out.println("Detected labels for " + photo);
-//		       for (Label label: labels) {
-//		          System.out.println(label.getName() + ": " + label.getConfidence().toString());
-//		          if(labelName.equalsIgnoreCase(label.getName())){
-//		        	 img.setImageURL(s3SummaryOfFiles.getKey());
-//		        	 imageDetectLabel.add(img);
-//		          }
-//		          String insertTable = "INSERT INTO `CloudDB`.`imageLabel`(`image id`,`labels`)VALUES(?,?);";
-//		          PreparedStatement setupStatement = conn.prepareStatement(insertTable);
-//		          setupStatement.setString(1, s3SummaryOfFiles.getKey());
-//		          setupStatement.setString(2, label.getName());
-//		          setupStatement.execute();
-//		          setupStatement.close();
-
-			//	       }
 			System.out.println(labelName);
 			String selectTable = "SELECT distinct imageid FROM CloudDB.imageLabel where labels = ?;";
 			PreparedStatement setupStatement = conn.prepareStatement(selectTable);
@@ -232,7 +206,7 @@ public ModelAndView DetectLabelsImage(HttpServletRequest request) throws SQLExce
 			e.printStackTrace();
 		}}
 
-		//}
+	
 
 		view.addObject("imageDetectLabel",imageDetectLabel);
 		view.addObject("showLabelImages",true);
