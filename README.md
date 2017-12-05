@@ -9,9 +9,9 @@
 ## Group Number 04:
     
     • Anjana Eldo (https://www.linkedin.com/in/anjana-eldo-1b7744146/)
-    • Anjana Kamath Miyar
+    • Anjana Kamath Miyar (https://www.linkedin.com/in/anjanakamath/)
     • Mudrita Chaturvedi  (www.linkedin.com/in/mudrita-chaturvedi-aa844588)
-    • Vidya Coimbatore Nand Kumar
+    • Vidya Coimbatore Nand Kumar (www.linkedin.com/in/vidya-n-)
     
 
 
@@ -22,11 +22,11 @@ Inkling is an online photo management application designed and deployed on AWS c
 
 ## Features offered:
 
-### Voice message welcoming the user on successful authentication
-### Filter the images based on events
-### Search for event pictures based on keywords
-### The user may access all of his photos from various events
-### Voice commands to access photos based on tags
+    • Voice message welcoming the user on successful authentication
+    • Filter the images based on events
+    • Search for event pictures based on keywords
+    • The user may access all of his photos from various events
+    • Voice commands to access photos based on tags
 
 
 ## Pre-requisites for running this project on local
