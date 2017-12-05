@@ -22,11 +22,11 @@ Inkling is an online photo management application designed and deployed on AWS c
 
 ## Features offered:
 
-Voice message welcoming the user on successful authentication
-Filter the images based on events
-Search for event pictures based on keywords
-The user may access all of his photos from various events
-Voice commands to access photos based on tags
+### Voice message welcoming the user on successful authentication
+### Filter the images based on events
+### Search for event pictures based on keywords
+### The user may access all of his photos from various events
+### Voice commands to access photos based on tags
 
 
 ## Pre-requisites for running this project on local
@@ -60,25 +60,25 @@ Voice commands to access photos based on tags
     
 ## Login Page
 
-    ![alt text](Images/Login.jpeg "this is the login page")
+![alt text](Images/Login.jpeg "this is the login page")
     
     
 ## Dashboard window
 
-    ![alt text](Images/Dashboard.jpeg "this is dashboard page")
+![alt text](Images/Dashboard.jpeg "this is dashboard page")
     
     
 ##  Search by Event
 
-    ![alt text](Images/SearchByEvent.jpeg "demo showing search by events")
+![alt text](Images/SearchByEvent.jpeg "demo showing search by events")
     
     
 ## Search by Label
 
-    ![alt text](Images/SearchByTags.jpeg "demo showing search by label")
+![alt text](Images/SearchByTags.jpeg "demo showing search by label")
     
     
 ## Search by face
 
-    ![alt text](Images/SearchByFace.jpeg "demo showing search by face")
+![alt text](Images/SearchByFace.jpeg "demo showing search by face")
 
