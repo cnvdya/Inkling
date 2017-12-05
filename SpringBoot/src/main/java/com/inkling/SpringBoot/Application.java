@@ -1,4 +1,22 @@
 package com.inkling.SpringBoot;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
+ 
+@SpringBootApplication
+public class Application extends SpringBootServletInitializer {
+ 
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(Application.class);
+    }
+ 
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(Application.class, args);
+    }
+}
+
 //
 //import java.io.File;
 //import java.io.FileInputStream;
@@ -110,20 +128,3 @@ package com.inkling.SpringBoot;
 
 //package com.anjana.springboot;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
- 
-@SpringBootApplication
-public class Application extends SpringBootServletInitializer {
- 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(Application.class);
-    }
- 
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(Application.class, args);
-    }
-}
