@@ -11,7 +11,7 @@
     • Anjana Eldo (https://www.linkedin.com/in/anjana-eldo-1b7744146/)
     • Anjana Kamath Miyar (https://www.linkedin.com/in/anjanakamath/)
     • Mudrita Chaturvedi  (www.linkedin.com/in/mudrita-chaturvedi-aa844588)
-    • Vidya Coimbatore Nand Kumar (www.linkedin.com/in/vidya-n-)
+    • Vidya Nand Kumar (www.linkedin.com/in/vidya-n-)
     
 
 
